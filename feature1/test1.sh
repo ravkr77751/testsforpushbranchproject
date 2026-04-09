@@ -1,6 +1,6 @@
  #!/bin/bash
 title=$(curl -s https://127.0.0.1:3000 )
-echo $title
+echo $?
 echo 'Entering tests'
 if [[ $title == "GitHubv1.1" ]]; then
     echo "Test Successfull !!"

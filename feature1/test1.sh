@@ -1,5 +1,5 @@
  #!/bin/bash
-title=$(curl -s https://127.0.0.1 | grep -oP '(?<=<title>)(.*)(?=</title>)')
+title=$(curl -s https://127.0.0.1:3000 | grep -oP '(?<=<title>)(.*)(?=</title>)')
 echo $title
 echo 'Entering tests'
 if [[ $title == "GitHubv1.1" ]]; then
